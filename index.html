@@ -1,0 +1,100 @@
+<!DOCTYPE insulated HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StellarComics | Read Webcomics Online</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">StellarComics</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Originals</a>
+            <a href="#">Genres</a>
+        </div>
+        <div class="nav-actions">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search comics, creators...">
+                <div class="search-results" id="search-results"></div>
+            </div>
+            <button class="btn-icon" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="profile.html">
+                <img src="https://ui-avatars.com/api/?name=User&background=random" alt="Profile" class="profile-pic" id="nav-profile-pic">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="banner-container">
+        <div class="banner-track" id="banner-track">
+            <!-- Dynamic slides injected by JS -->
+        </div>
+        <div class="banner-controls" id="banner-dots">
+            <!-- Dynamic dots injected by JS -->
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Trending Section -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Trending Now</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="horizontal-scroll" id="trending-list">
+                <!-- Skeleton Loading -->
+                <div class="comic-card skeleton" style="height: 310px;"></div>
+                <div class="comic-card skeleton" style="height: 310px;"></div>
+                <div class="comic-card skeleton" style="height: 310px;"></div>
+                <div class="comic-card skeleton" style="height: 310px;"></div>
+                <div class="comic-card skeleton" style="height: 310px;"></div>
+            </div>
+        </section>
+
+        <!-- Popular Section -->
+        <section class="section" style="background-color: var(--bg-card); padding-top: 3rem; padding-bottom: 3rem;">
+            <div class="section-title">
+                <h2>Popular Categories</h2>
+                <a href="#" class="view-all">More <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="horizontal-scroll" id="popular-list">
+                <!-- Skeleton Loading -->
+                <div class="comic-card skeleton" style="height: 310px;"></div>
+                <div class="comic-card skeleton" style="height: 310px;"></div>
+                <div class="comic-card skeleton" style="height: 310px;"></div>
+            </div>
+        </section>
+
+        <!-- New Releases Section -->
+        <section class="section">
+            <div class="section-title">
+                <h2>New Releases</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="horizontal-scroll" id="new-list">
+                <!-- Skeleton Loading -->
+                <div class="comic-card skeleton" style="height: 310px;"></div>
+                <div class="comic-card skeleton" style="height: 310px;"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
